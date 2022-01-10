@@ -1,4 +1,4 @@
-syntax = "proto2";
+syntax = "proto3";
 package infres.webservices.protos;
 option java_multiple_files = true;
 option java_outer_classname = "TournamentsProtos";
@@ -19,6 +19,17 @@ option java_outer_classname = "TournamentsProtos";
 //  repeated Tournament tournament = 2;
 //}
 
-message Test {
-  optional string mess = 1;
+// Sends a greeting
+service Greeter {
+    rpc SayHello (HelloRequest) returns (HelloReply) {}
+    }
+
+// The request message containing the user's name.
+message HelloRequest {
+  optional string name = 1;
+}
+
+// The response message containing the greetings
+message HelloReply {
+  optional string message = 1;
 }
