@@ -1,0 +1,37 @@
+syntax = "proto3";
+package infres.webservices.protos;
+option java_multiple_files = true;
+option java_outer_classname = "TournamentsProtos";
+
+service ReservationPlace {
+  rpc reservePlace(PlaceRequest) returns (PlaceResponse);
+  rpc getPlace(PlaceId) returns (PlaceRequest);
+}
+
+message PlaceRequest {
+  PlaceId placeId = 1;
+  int64 price = 2;
+  optional Place placeType = 3;
+  Date bookingDate = 4;
+  bool isAvailable = 5;
+}
+
+message Date {
+  int32 day = 1;
+  int32 month = 2;
+  int32 year = 3;
+  int32 hour = 4;
+}
+
+message PlaceId {
+  int32 placeId = 1;
+}
+
+enum Place {
+  SIMPLE = 0;
+  PRIVATE = 1;
+}
+
+message PlaceResponse {
+  bool status = 1;
+}

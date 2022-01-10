@@ -1,23 +1,7 @@
 syntax = "proto3";
 package infres.webservices.protos;
 option java_multiple_files = true;
-option java_outer_classname = "TournamentsProtos";
-
-//message Person {
-//  optional string firstName = 1;
-//  optional string lastName = 2;
-//  optional string email = 3;
-//}
-//
-//message Tournament {
-//  optional string type = 1;
-//  optional int32 price = 2;
-//}
-//
-//message Reservation {
-//  repeated Person person = 1;
-//  repeated Tournament tournament = 2;
-//}
+option java_outer_classname = "ExampleProtos";
 
 // Sends a greeting
 service Greeter {
