@@ -1,4 +1,4 @@
-package tournaments.grpc.example;
+package grpc.example.test;
 
 import infres.webservices.protos.GreeterGrpc;
 import infres.webservices.protos.HelloReply;

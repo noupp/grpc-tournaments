@@ -1,8 +1,7 @@
-package tournaments.grpc;
+package grpc.example.test;
 
 import io.grpc.Server;
 import io.grpc.ServerBuilder;
-import tournaments.grpc.example.GreeterServiceImpl;
 
 import java.io.IOException;
 
