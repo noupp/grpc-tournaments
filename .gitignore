@@ -1,0 +1,16 @@
+# Compil
+/target
+
+# IDE & editors
+/.idea
+*.iml
+.project
+.classpath
+.c9/
+*.launch
+.settings/
+*.sublime-workspace
+
+#Conflits
+*.orig
+
