@@ -1,0 +1,6 @@
+syntax = "proto3";
+package tournaments.grpc;
+
+message TestRequest {
+  optional string test = 1;
+}
