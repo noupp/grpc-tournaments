@@ -18,6 +18,7 @@ public class ReservationClientApp {
         System.out.println("Place type:" + request.getPlaceType().name());
         System.out.println("Place date:\n" + request.getBookingDate());
         System.out.println("Place available: " + request.getIsAvailable());
+        //TODO fix place booked status not showing when place is not available
         System.out.println("Place booked " + response);
 
         channel.shutdown();
