@@ -5,6 +5,7 @@ option java_outer_classname = "TournamentsProtos";
 
 service ReservationPlace {
   rpc reservePlace(PlaceRequest) returns (PlaceResponse);
+//  rpc setPlace(PlaceId, int64, ) returns (PlaceRequest);
   rpc getPlace(PlaceId) returns (PlaceRequest);
 }
 
