@@ -7,7 +7,7 @@ import io.grpc.ManagedChannelBuilder;
 
 public class ReservationClientApp {
     public static void main(String[] args){
-        ManagedChannel channel = ManagedChannelBuilder.forAddress("localhost", 8080)
+        ManagedChannel channel = ManagedChannelBuilder.forAddress("172.17.0.2", 8080)
                 .usePlaintext()
                 .build();
 
